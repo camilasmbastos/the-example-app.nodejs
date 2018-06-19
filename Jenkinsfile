@@ -9,6 +9,13 @@ timestamps {
         git 'https://github.com/camilasmbastos/PipelineScript'
         extcode = load 'deploy.groovy'
         
+        extcode.checkoutStage()
+        extcode.buildStage()
+        extcode.testStage()
+        extcode.archiveStage()
+        extcode.deployHMGStage()
+        extcode.releaseStage()
+        extcode.deployPRDStage()
         
     }
 }
