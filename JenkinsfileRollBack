@@ -9,7 +9,7 @@ timestamps {
         git 'https://github.com/camilasmbastos/PipelineScript'
         extcode = load 'deploy.groovy'
         
-        //extcode.checkoutStage()
+        extcode.checkoutStage()
         extcode.deployPRDStage()
         
     }
