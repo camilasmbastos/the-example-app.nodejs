@@ -1,3 +1,8 @@
+properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', 
+                                      artifactNumToKeepStr: '', 
+                                      daysToKeepStr: '', 
+                                      numToKeepStr: '5'))
+
 timestamps {
     node() {
         stage ('Checkout') {
